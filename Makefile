@@ -1,9 +1,9 @@
 
 CC = gcc
-CFLAGS = -g -I$(IDIR)  -Wall -pedantic
+CFLAGS = -I$(IDIR) -O3  -Wall -pedantic
 CXX = g++
-CXXFLAGS = -g -I$(IDIR) -std=c++11 -Wall
-LDFLAGS =  -lcurl
+CXXFLAGS = -I$(IDIR) -O3 -std=c++11 -Wall
+LDFLAGS =  -s -lcurl
 RM = rm -rdf
 
 SDIR = src
